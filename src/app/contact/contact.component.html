@@ -12,6 +12,7 @@
           id="fname"
           name="firstname"
           placeholder="Your name.."
+          [(ngModel)]="fisrtName"
         />
         <label for="lname">Last Name</label>
         <input
@@ -19,9 +20,10 @@
           id="lname"
           name="lastname"
           placeholder="Your last name.."
+          [(ngModel)]="lastName"
         />
         <label for="country">Country</label>
-        <select id="country" name="country">
+        <select id="country" name="country" [(ngModel)]="country">
           <option value="australia">Australia</option>
           <option value="canada">Canada</option>
           <option value="usa">USA</option>
@@ -32,6 +34,7 @@
           name="subject"
           placeholder="Write something.."
           style="height: 170px"
+          [(ngModel)]="subject"
         ></textarea>
         <input type="submit" value="Submit" />
       </form>
